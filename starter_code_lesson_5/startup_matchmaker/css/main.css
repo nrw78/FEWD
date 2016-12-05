@@ -2,7 +2,9 @@
    Global Overrides
   ========================================================================== */
 * {
+  
   box-sizing: border-box;
+  
 /*   border: 1px solid red; */
 }
 
@@ -20,45 +22,181 @@
     SITE COLORS for your reference:
     (refer to styleguide.jpg for hex codes or use Sip to pick colors from design)
 
-    White - #ffffff;
-    Light Grey -
-    Dark Grey -
-    Grey/Black(text color) -
-    Yellow -
-    Red -
+     White - #ffffff;
+    Light Grey - #d4e1db
+    Dark Grey - #3c3a3a
+    Grey/Black(text color) - #080808
+    Yellow - #fedb0d
+    Red - #ff0121
 */
 
 
 /* Global
    ================================================================ */
+/* Set some defaults! font-family, font-size, color, etc. */
 body {
-  /* Set some defaults! font-family, font-size, color, etc. */
+  font-size: 20px;
+  color: #080808;
+  background-color: #ffffff;
 }
 
 /* Text Styles (a, a:hover, a:visited, a:active, p, h1, h2, h3, h4, etc.)
    ================================================================ */
-a {
+a, a:visited, a:active {
+  text-decoration: none;
+  color: inherit;
   /* Set some default styles for anchors (color, text decoration) */
+}
+
+a:hover {
+  color: #ff0121;
+}
+
+h1 {
+  font-family: 'Merriweather';
+  font-size: 30px;
+  font-weight: lighter;
+  color: #ffffff;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  float: left;
+
+}
+
+h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h3 {
+  font-family: 'Merriweather', serif;
+  font-size: 25px;
+}
+
+p {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.tagline {
+  font-family: 'Merriweather', serif;
+  font-size: 25px;
+  font-style: italic; 
+  text-align: center;
+  background-color: #d4e1db;
+  padding: 20px;
+  border-top: 5px solid #fedb0d;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+
+.banner {
+  position: relative; 
+  background: url(../images/coworking.jpg) center center no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  padding: 22%;
+  
+}
+
+.blurb {
+  position: absolute;
+  width: 35%;
+  left: 60%;
+  bottom: 10%;
+  padding: 3%;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 1px 1px 1px #3c3a3a;
+  z-index: 2;
 }
 
 /* Layout (columns, floats, etc.)
    ================================================================ */
-
+.info {
+  float: left;
+  width: 33%;
+  box-shadow: 1px 0px 0px 0px #d4e1db inset;
+  padding: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
 /* Header
    ================================================================ */
-
+header {
+  width: 100%;
+  background-color: #3c3a3a;
+  padding: 15px;
+}
 
 
 /* Footer
    ================================================================ */
-
+footer {
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+  color: #d4e1db;
+  background-color: #3c3a3a;
+  padding: 10px;
+  clear: both;
+}
 
 
 /* Navigation
    ================================================================ */
 
+nav {
+  float: right;
+ /* display: inline;*/
+  font-family: 'Oswald', sans-serif;
+  font-weight: lighter;
+  color: #ffffff;
 
+}
 
+nav ul {
+ -webkit-margin-before: 0em;
+ -webkit-margin-after: 0em;
+  
+}
+
+h1, li {
+  display: inline;
+  vertical-align: middle;
+}
+
+nav li {
+  list-style: none;
+  display: inline;
+  padding: 0px 15px;
+}
 /* Buttons
    ================================================================ */
+
+.blurb .button {
+  display: block;
+  margin: 30px 0px 30px 0px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #ff0121;
+  padding: 5px 10px 5px 10px;
+  border-radius: 4px;
+  box-shadow: inset 0px -4px 0px #C70039;
+
+}
+
+.info .button {
+  display: block;
+  margin: 30px 0px 30px 0px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  color: #080808;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #d4e1db;
+  padding: 10px 20px 10px 20px;
+  box-shadow: inset 0px -4px 0px #b4cbc0; 
+  border-radius: 4px;
+}
