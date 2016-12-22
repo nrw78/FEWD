@@ -1,0 +1,125 @@
+/* ==========================================================================
+   Global Overrides
+  ========================================================================== */
+* {
+  box-sizing: border-box;
+/*   border: 1px solid red; */
+}
+
+.clearfix:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+/* ==========================================================================
+   Author's custom styles
+  ========================================================================== */
+
+/* 
+    SITE COLORS for your reference:
+    (refer to styleguide.jpg for hex codes or use Sip to pick colors from design)
+
+     White - #ffffff;
+    Light Grey - #d4e1db
+    Dark Grey - #3c3a3a
+    Grey/Black(text color) - #080808
+    Yellow - #fedb0d
+    Red - #ff0121
+*/
+
+
+/* Global
+   ================================================================ */
+/* Set some defaults! font-family, font-size, color, etc. */
+body {
+  font-size: 20px;
+  color: #080808;
+  background-color: #ffffff;
+}
+
+/* Text Styles (a, a:hover, a:visited, a:active, p, h1, h2, h3, h4, etc.)
+   ================================================================ */
+a, a:visited, a:active {
+  text-decoration: none;
+  color: inherit;
+  /* Set some default styles for anchors (color, text decoration) */
+}
+
+a:hover {
+  color: #ff0121;
+}
+
+h1 {
+  font-family: 'Merriweather';
+  font-size: 30px;
+  font-weight: lighter;
+  color: #ffffff;
+  background-color: #3c3a3a;
+}
+
+h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h3 {
+  font-family: 'Merriweather', serif;
+  font-size: 25px;
+}
+
+p {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.tagline {
+  font-family: 'Merriweather', serif;
+  font-size: 25px;
+  font-style: italic; 
+  text-align: center;
+  background-color: #d4e1db;
+  padding: 20px;
+  border-top: 3px solid #fedb0d;
+  -webkit-margin-before: 0;
+}
+
+/* Layout (columns, floats, etc.)
+   ================================================================ */
+
+
+/* Header
+   ================================================================ */
+header {
+  background-color: #3c3a3a;
+  padding: 15px;
+  position: relative;
+}
+
+
+/* Footer
+   ================================================================ */
+footer {
+  clear: both;
+}
+
+
+/* Navigation
+   ================================================================ */
+
+nav {
+  font-family: 'Oswald', sans-serif;
+  font-weight: lighter;
+  color: #ffffff;
+  float: right;
+}
+
+nav ul {
+  
+}
+nav li {
+  list-style: none;
+  display: inline;
+  padding: 10px;
+
+}
+/* Buttons
+   ================================================================ */
